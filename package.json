@@ -1,0 +1,43 @@
+{
+  "name": "fita-be-test",
+  "version": "1.0.0",
+  "description": "Fita Take Home Test",
+  "main": "index.js",
+  "scripts": {
+    "dev": "set SLS_DEBUG=* && serverless offline",
+    "init:dev": "cd db/config/dev && knex migrate:latest && knex seed:run"
+  },
+  "author": "Ahmad M. Satria A.",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-lambda": "^2.16.1",
+    "awilix": "^7.0.3",
+    "cls-hooked": "^4.2.2",
+    "graphql": "^15.3.0",
+    "joi": "^17.6.0",
+    "knex": "0.21.17",
+    "lodash": "^4.17.21",
+    "mysql2": "^2.3.3",
+    "pino": "^7.11.0",
+    "source-map-support": "^0.5.10",
+    "stack-trace": "0.0.10",
+    "uuid": "^8.3.2",
+    "verror": "1.10.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.17",
+    "@types/node": "^10.14.22",
+    "@types/stack-trace": "0.0.30",
+    "@types/uuid": "^8.3.4",
+    "@types/verror": "1.10.4",
+    "eslint": "^6.6.0",
+    "serverless": "^1.79.0",
+    "serverless-dotenv-plugin": "^3.0.0",
+    "serverless-offline": "^6.5.0",
+    "serverless-plugin-typescript": "^1.1.9",
+    "ts-loader": "^5.3.3",
+    "tslint": "^5.20.0",
+    "tslint-config-airbnb": "^5.11.2",
+    "typescript": "^3.2.4"
+  }
+}
